@@ -1,5 +1,6 @@
 title: Matemáticas · ESO
 arrange:
+  - index.md
   - 01-numeros-naturales.md: Números naturales
   - 02-fracciones.md: Fracciones
   - 03-potencias.md: Potencias
