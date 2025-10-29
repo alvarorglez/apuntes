@@ -1,0 +1,64 @@
+
+site_name: Apuntes de Bachillerato
+site_description: Apuntes y ejercicios resueltos — Matemáticas/Física
+site_author: Profesor/a
+repo_url: https://github.com/usuario/apuntes-bach
+repo_name: usuario/apuntes-bach
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - content.action.view
+    - content.footnote.tooltips
+    - header.autohide
+  language: es
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Atkinson Hyperlegible
+    code: JetBrains Mono
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/usuario
+  generator: false
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - attr_list
+  - footnotes
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js
+  - javascripts/katex-init.js
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
+  - styles/extra.css
+
+plugins:
+  - search
+  # - with-pdf:  # descomenta si instalas mkdocs-with-pdf
+  #     output_path: pdf/apuntes.pdf
+
+nav:
+  - Inicio: index.md
+  - Cálculo:
+      - 1. Límites: calculo/01-limites.md
+      - 2. Derivadas: calculo/02-derivadas.md
+  - Física:
+      - 1. Cinemática: fisica/01-cinematica.md
