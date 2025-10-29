@@ -1,5 +1,6 @@
 title: Física · Bachillerato
 arrange:
+  - index.md
   - 01-cinematica.md: Cinemática
   - 02-dinamica.md: Dinámica
   - 03-electricidad.md: Electricidad
