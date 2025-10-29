@@ -1,11 +1,6 @@
-/* Colores por asignatura en los títulos */
-h1, h2, h3 {
-  font-weight: 600;
-}
-
 /* ===== Colores por asignatura usando variables de Material ===== */
 /* Matemáticas (rojo) */
-.mate {
+:root:has(.mate) {
   --md-primary-fg-color:        #e53935;  /* rojo 600 */
   --md-primary-fg-color--light: #ffcdd2;  /* rojo 100 */
   --md-primary-fg-color--dark:  #b71c1c;  /* rojo 900 */
@@ -13,7 +8,7 @@ h1, h2, h3 {
 }
 
 /* Física (naranja) */
-.fisica {
+:root:has(.fisica)
   --md-primary-fg-color:        #fb8c00;  /* naranja 600 */
   --md-primary-fg-color--light: #ffe0b2;  /* naranja 100 */
   --md-primary-fg-color--dark:  #e65100;  /* naranja 900 */
@@ -21,7 +16,7 @@ h1, h2, h3 {
 }
 
 /* Química (verde) */
-.quimica {
+:root:has(.quimica) {
   --md-primary-fg-color:        #43a047;  /* verde 600 */
   --md-primary-fg-color--light: #c8e6c9;  /* verde 100 */
   --md-primary-fg-color--dark:  #1b5e20;  /* verde 900 */
