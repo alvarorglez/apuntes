@@ -60,33 +60,4 @@ extra_javascript:
 
 plugins:
   - search
-
-nav:
-  - Inicio: index.md
-  - Matemáticas:
-      - ESO:
-          - Números naturales: matematicas/eso/01-numeros-naturales.md
-          - Fracciones: matematicas/eso/02-fracciones.md
-          - Potencias: matematicas/eso/03-potencias.md
-      - Bachillerato:
-          - Límites: matematicas/bach/01-limites.md
-          - Derivadas: matematicas/bach/02-derivadas.md
-          - Integrales: matematicas/bach/03-integrales.md
-  - Física:
-      - ESO:
-          - Movimiento: fisica/eso/01-movimiento.md
-          - Fuerzas: fisica/eso/02-fuerzas.md
-          - Energía: fisica/eso/03-energia.md
-      - Bachillerato:
-          - Cinemática: fisica/bach/01-cinematica.md
-          - Dinámica: fisica/bach/02-dinamica.md
-          - Electricidad: fisica/bach/03-electricidad.md
-  - Química:
-      - ESO:
-          - Átomos y moléculas: quimica/eso/01-atomos.md
-          - Tabla periódica: quimica/eso/02-tabla-periodica.md
-          - Reacciones químicas: quimica/eso/03-reacciones.md
-      - Bachillerato:
-          - Estequiometría: quimica/bach/01-estequiometria.md
-          - Termoquímica: quimica/bach/02-termoquimica.md
-          - Equilibrio químico: quimica/bach/03-equilibrio.md
+  - awesome-pages
