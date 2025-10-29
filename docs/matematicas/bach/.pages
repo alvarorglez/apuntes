@@ -1,6 +1,6 @@
 title: Matemáticas · Bachillerato
 arrange:
   - index.md
-  - 01-limites.md: Límites
-  - 02-derivadas.md: Derivadas
-  - 03-integrales.md: Integrales
+  - 01-limites.md
+  - 02-derivadas.md
+  - 03-integrales.md
