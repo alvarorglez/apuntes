@@ -16,15 +16,22 @@ theme:
     - search.highlight
     - content.code.copy
     - header.autohide
+    - palette.toggle
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: blue
       accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: blue grey
       accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
   font:
     text: Atkinson Hyperlegible
     code: JetBrains Mono
