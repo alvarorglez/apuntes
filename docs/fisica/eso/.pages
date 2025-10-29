@@ -1,5 +1,6 @@
 title: Física · ESO
 arrange:
+  - index.md
   - 01-movimiento.md: Movimiento
   - 02-fuerzas.md: Fuerzas
   - 03-energia.md: Energía
