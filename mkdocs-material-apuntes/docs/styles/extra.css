@@ -1,0 +1,6 @@
+
+.ggb-wrapper {
+  overflow-x: auto;
+}
+iframe { max-width: 100%; }
+.md-typeset .admonition { border-radius: 12px; }
