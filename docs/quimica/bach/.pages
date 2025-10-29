@@ -1,5 +1,6 @@
 title: Física · Bachillerato
 arrange:
+  - index.md
   - el-atomo.md: El átomo
   - enlace-quimico.md: Enlace químico
   - termodinamica.md: Termodinámica
