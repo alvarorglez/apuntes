@@ -1,5 +1,5 @@
 
-# Apuntes con MkDocs Material — Plantilla
+# Apuntes con MkDocs Material — Plantilla 
 
 ## Requisitos
 Python 3.10+
