@@ -1,4 +1,5 @@
 (function () {
+  // Define una función para aplicar los colores por asignatura
   function setVars(main, light, dark) {
     const r = document.documentElement.style;
     r.setProperty("--md-primary-fg-color", main);
@@ -8,27 +9,27 @@
   }
 
   function applySubjectTheme() {
-    // contenedor principal del contenido
-    const inner = document.querySelector(".md-content__inner");
-    if (!inner) return;
+    // Detecta la clase aplicada al contenido (Material usa .md-typeset)
+    const typeset = document.querySelector(".md-typeset");
+    if (!typeset) return;
 
-    // reset a colores por defecto del tema
+    // Resetea primero los colores
     const r = document.documentElement.style;
     r.removeProperty("--md-primary-fg-color");
     r.removeProperty("--md-primary-fg-color--light");
     r.removeProperty("--md-primary-fg-color--dark");
     r.removeProperty("--md-accent-fg-color");
 
-    if (inner.classList.contains("mate")) {
-      setVars("#e53935", "#ffcdd2", "#b71c1c");     // rojo
-    } else if (inner.classList.contains("fisica")) {
-      setVars("#fb8c00", "#ffe0b2", "#e65100");     // naranja
-    } else if (inner.classList.contains("quimica")) {
-      setVars("#43a047", "#c8e6c9", "#1b5e20");     // verde
+    // Aplica color según la clase detectada
+    if (typeset.classList.contains("mate")) {
+      setVars("#e53935", "#ffcdd2", "#b71c1c"); // rojo
+    } else if (typeset.classList.contains("fisica")) {
+      setVars("#fb8c00", "#ffe0b2", "#e65100"); // naranja
+    } else if (typeset.classList.contains("quimica")) {
+      setVars("#43a047", "#c8e6c9", "#1b5e20"); // verde
     }
-    // si no hay clase -> Inicio queda con color neutro del tema
   }
 
-  // Material usa navegación instantánea; hay que re-aplicar tras cada carga
+  // Material recarga páginas dinámicamente: hay que re-aplicar en cada cambio
   document$.subscribe(applySubjectTheme);
 })();
