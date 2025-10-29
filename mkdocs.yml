@@ -1,34 +1,35 @@
+site_name: Apuntes de Bachillerato y ESO
+site_author: Álvaro Roldán
+site_description: Apuntes didácticos de Matemáticas, Física y Química — ESO y Bachillerato
+repo_url: https://github.com/alvarorglez/apuntes
+repo_name: alvarorglez/apuntes
 
-site_name: Apuntes de Bachillerato
-site_description: Apuntes y ejercicios resueltos — Matemáticas/Física
-site_author: Profesor/a
-repo_url: https://github.com/usuario/apuntes-bach
-repo_name: usuario/apuntes-bach
 theme:
   name: material
+  language: es
   features:
-    - content.code.copy
     - navigation.tabs
     - navigation.top
     - navigation.footer
     - toc.follow
     - search.suggest
     - search.highlight
-    - content.action.edit
-    - content.action.view
-    - content.footnote.tooltips
+    - content.code.copy
     - header.autohide
-  language: es
-  icon:
-    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: indigo
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: indigo
   font:
     text: Atkinson Hyperlegible
     code: JetBrains Mono
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/usuario
-  generator: false
+  icon:
+    repo: fontawesome/brands/github
 
 markdown_extensions:
   - admonition
@@ -41,24 +42,43 @@ markdown_extensions:
   - toc:
       permalink: true
 
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
+  - styles/extra.css
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js
   - javascripts/katex-init.js
 
-extra_css:
-  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
-  - styles/extra.css
-
 plugins:
   - search
-  # - with-pdf:  # descomenta si instalas mkdocs-with-pdf
-  #     output_path: pdf/apuntes.pdf
 
 nav:
   - Inicio: index.md
-  - Cálculo:
-      - 1. Límites: calculo/01-limites.md
-      - 2. Derivadas: calculo/02-derivadas.md
+  - Matemáticas:
+      - ESO:
+          - Números naturales: matematicas/eso/01-numeros-naturales.md
+          - Fracciones: matematicas/eso/02-fracciones.md
+          - Potencias: matematicas/eso/03-potencias.md
+      - Bachillerato:
+          - Límites: matematicas/bach/01-limites.md
+          - Derivadas: matematicas/bach/02-derivadas.md
+          - Integrales: matematicas/bach/03-integrales.md
   - Física:
-      - 1. Cinemática: fisica/01-cinematica.md
+      - ESO:
+          - Movimiento: fisica/eso/01-movimiento.md
+          - Fuerzas: fisica/eso/02-fuerzas.md
+          - Energía: fisica/eso/03-energia.md
+      - Bachillerato:
+          - Cinemática: fisica/bach/01-cinematica.md
+          - Dinámica: fisica/bach/02-dinamica.md
+          - Electricidad: fisica/bach/03-electricidad.md
+  - Química:
+      - ESO:
+          - Átomos y moléculas: quimica/eso/01-atomos.md
+          - Tabla periódica: quimica/eso/02-tabla-periodica.md
+          - Reacciones químicas: quimica/eso/03-reacciones.md
+      - Bachillerato:
+          - Estequiometría: quimica/bach/01-estequiometria.md
+          - Termoquímica: quimica/bach/02-termoquimica.md
+          - Equilibrio químico: quimica/bach/03-equilibrio.md
