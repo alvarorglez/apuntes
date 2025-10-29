@@ -12,9 +12,10 @@ La estequiometría estudia las proporciones en las que reaccionan las sustancias
 
 \(\ce{H2O}\)  
 \(\ce{NH4+}\)  
-\[\ce{2H2 + O2 -> 2H2O}\]  
-\[\ce{Cu^{2+} + 2OH^- -> Cu(OH)2 v}\]  
-\[\ce{^{14}_{6}C -> ^{14}_{7}N + e^- + \bar{\nu}_e}\]
+\(\ce{2H2 + O2 -> 2H2O}\)  
+\(\ce{Cu^{2+} + 2OH^- -> Cu(OH)2 v}\)  
+\(\ce{^{14}_{6}C -> ^{14}_{7}N + e^- + \bar{\nu}_e}\)
+
 
 
 
