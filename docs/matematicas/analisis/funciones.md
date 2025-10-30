@@ -1,1 +1,6 @@
-funcio
+---
+class: mate
+---
+
+# Funciones
+
