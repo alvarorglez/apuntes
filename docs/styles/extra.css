@@ -1,24 +1,12 @@
-/* ===== Colores por asignatura usando variables de Material ===== */
-/* Matemáticas (rojo) */
-:root:has(.mate) {
-  --md-primary-fg-color:        #e53935;  /* rojo 600 */
-  --md-primary-fg-color--light: #ffcdd2;  /* rojo 100 */
-  --md-primary-fg-color--dark:  #b71c1c;  /* rojo 900 */
-  --md-accent-fg-color:         #e53935;
+/* Igualar el tamaño del texto en admoniciones al texto base */
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: inherit;
 }
 
-/* Física (naranja) */
-:root:has(.fisica)
-  --md-primary-fg-color:        #fb8c00;  /* naranja 600 */
-  --md-primary-fg-color--light: #ffe0b2;  /* naranja 100 */
-  --md-primary-fg-color--dark:  #e65100;  /* naranja 900 */
-  --md-accent-fg-color:         #fb8c00;
-}
-
-/* Química (verde) */
-:root:has(.quimica) {
-  --md-primary-fg-color:        #43a047;  /* verde 600 */
-  --md-primary-fg-color--light: #c8e6c9;  /* verde 100 */
-  --md-primary-fg-color--dark:  #1b5e20;  /* verde 900 */
-  --md-accent-fg-color:         #43a047;
+/* Asegura que los párrafos dentro también mantengan el tamaño normal */
+.md-typeset .admonition p,
+.md-typeset details p {
+  font-size: inherit;
+  line-height: 1.6;
 }
